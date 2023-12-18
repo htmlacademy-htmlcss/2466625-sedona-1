@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Черепанова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2466625).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Тюлихова` (https://htmlacademy.ru/profile/id523263).
 
 ---
 
