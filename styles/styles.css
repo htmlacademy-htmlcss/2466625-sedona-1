@@ -230,6 +230,12 @@ body {
   text-align: center;
 }
 
+.subscribes-container {
+  width: 684px;
+  padding-left: 258px;
+  padding-right: 258px;
+}
+
 
 .subscribes-title {
  font-size: 30px;
@@ -263,14 +269,20 @@ body {
 
 .footer-social {
   width: 142px;
-  margin-right: auto;
   margin-left: 70px;
 }
 
+.phone-container {
+  width: 331px;
+  padding-left: 195px;
+  padding-right: 195px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .academy-resource {
-  margin-left: auto;
-  margin-right: 70px;
   width: 120px;
+  margin-right: 70px;
 }
 
 .footer-contacts-address-phone {
