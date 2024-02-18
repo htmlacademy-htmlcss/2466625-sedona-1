@@ -28,6 +28,17 @@ body {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button-brown {
   background-color: #756157;
 }
@@ -51,34 +62,35 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  position: relative;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-logo {
-  margin-left: 70px;
-  margin-right: 30px;
+  position: absolute;
+  height: auto;
 }
 
 .navigation-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 168px;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 440px;
+  padding: 0;
 }
 
-.navigation-user {
-  list-style: none;
-  max-width: 290px;
-  margin-left: auto;
-  margin-right: 70px;
-}
-
-.navigation-link {
+.link-text {
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -87,6 +99,35 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-link {
+  display: block;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.search {
+  padding: 22px 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.favorites {
+  padding: 22px 12px;
+  margin-right: 20px
 }
 
 .navigation-button {
@@ -98,6 +139,8 @@ body {
   color:#ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding: 8px 34px;
 }
 
 .hero {
@@ -105,14 +148,15 @@ body {
   background-image: url("../images/mountains.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-text {
   display: block;
   margin: 0 auto;
-  padding-left: 371px;
-  padding-right: 371px;
-  padding-bottom: 82px;
 }
 
 .main-container {
@@ -123,16 +167,20 @@ body {
   color: #000000;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .advantages {
   text-align: center;
 }
 
+.subtitle-container {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  padding-left: 274px;
+  padding-right: 274px;
+}
+
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 22px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -140,29 +188,38 @@ body {
 }
 
 .subtitle-text {
+  margin: 0;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 
 .advantages-list {
-  text-align: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.advantages-item {
+.advantages-item-container {
   width: 230px;
-  padding-left: 85px;
-  padding-right: 85px;
+  min-height: 200px;
+  padding: 90px 85px;
 }
 
 .text-with-pic {
   background-color: #82B3D3;
   color: #ffffff;
+  display: flex;
+}
+
+.town_sedona {
+  display: block;
+}
+
+.text-with-pic-reverse {
+  flex-direction: row-reverse;
 }
 
 .advantages-title {
@@ -182,32 +239,44 @@ body {
   background-color: #f0f6fa;
 }
 
-.town_sedona {
-  display: block;
-}
-
 .text-beautiful-road {
   background-color: #e6f0f6;
 }
 
-.sedona-attractions {
-  display: block;
+.subtitle-container-2 {
+  padding-top: 64px;
+  padding-left: 347px;
+  padding-right: 347px;
+  padding-bottom: 64px;
 }
 
 .house {
   background-color: #f0f6fa;
 }
 
+.title-house {
+  margin: 0;
+}
+
 .food {
   background-color: #ffffff;
 }
 
+.title-food {
+  margin: 0;
+}
+
 .souvenirs {
-  background-color: #f0f6fa ;
+  background-color: #f0f6fa;
+}
+
+.title-souvenirs {
+  margin: 0;
 }
 
 .subtitle-interesting {
   text-align: center;
+  padding: 96px 304px;
 }
 
 .subtitle-button {
@@ -218,6 +287,8 @@ body {
  color:#ffffff;
  text-transform: uppercase;
  text-decoration: none;
+ display: block;
+ padding: 8px 50px;
 }
 
 .subscribes {
@@ -228,16 +299,20 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .subscribes-container {
   width: 684px;
-  padding-left: 258px;
-  padding-right: 258px;
+  margin: 0 auto;
 }
 
-
 .subscribes-title {
+ margin-top: 0;
+ margin-bottom: 20px;
  font-size: 30px;
  font-weight: 700;
  line-height: 36px;
@@ -246,6 +321,8 @@ body {
 }
 
 .subscribes-description {
+ margin-top: 0;
+ margin-bottom: 54px;
  font-size: 22px;
  font-weight: 400;
  line-height: 26px;
@@ -258,31 +335,37 @@ body {
  font-weight: 700;
  line-height: 36px;
  color:#ffffff;
+ padding: 8px 50px;
  text-transform: uppercase;
 }
 
-.page-footer-container {
+.page-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 30px;
 }
 
 .footer-social {
-  width: 142px;
-  margin-left: 70px;
+  width: 180px;
+  margin-right: auto;
 }
 
-.phone-container {
-  width: 331px;
-  padding-left: 195px;
-  padding-right: 195px;
-  margin-left: 35px;
-  margin-right: 35px;
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .academy-resource {
   width: 120px;
-  margin-right: 70px;
+  margin-left: auto;
+}
+
+.academy-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts-address-phone {
@@ -293,6 +376,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  width: 331px;
 }
 
 .filter {
@@ -306,9 +390,11 @@ body {
 
 .filter-container {
   width: 1060px;
+  padding-top: 35px;
+  padding-bottom: 70px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 70px;
+  margin: 0 auto;
 }
 
 .catalog-filter-group {
@@ -324,11 +410,24 @@ body {
   display: flex;
 }
 
+.inner-header {
+  margin-bottom: 40px;
+}
+
 .inner-header-title {
+ margin-top: 0;
+ margin-bottom: 8px;
  font-size: 60px;
  font-weight: 700;
  line-height: 78px;
  color: #ffffff;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -337,6 +436,7 @@ body {
  font-weight: 400;
  line-height: 21px;
  color: #ffffff;
+ margin-right: 41px;
 }
 
 .catalog-filter-title {
@@ -391,10 +491,15 @@ body {
 
 .hotels-catalog {
   color: #000000;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 60px;
 }
 
 .hotels-container {
   width: 1060px;
+  margin: 0 auto;
 }
 
 .hotels-found {
@@ -402,16 +507,28 @@ body {
  font-weight: 700;
  line-height: 36px;
  text-transform: uppercase;
+ margin-top: 6px;
+ margin-bottom: 6px;
 }
 
 .sorting-container {
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.sorting-container .button-light {
+  width: 48px;
+  height: 48px;
+  background-color: #82B3D3;
 }
 
 .hotel-list {
   text-align: center;
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-link {
@@ -469,26 +586,53 @@ body {
  line-height: 36px;
  text-transform: uppercase;
  text-align: center;
- list-style: none;
+ list-style-type: none;
+ display: flex;
+ margin: 0;
+ padding: 0;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  line-height: 36px;
+  font-weight: 700;
   color: #000000;
   background-color: #F2F2F2;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  line-height: 36px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
 }
 
 .catalog-subscribes {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   background-color: #ffffff;
 }
 
 .catalog-subscribes-title {
+ margin-top: 0;
+ margin-bottom: 20px;
  font-size: 30px;
  font-weight: 700;
  line-height: 36px;
@@ -497,6 +641,8 @@ body {
 }
 
 .catalog-subscribes-description {
+ margin-top: 0;
+ margin-bottom: 54px;
  font-size: 22px;
  font-weight: 400;
  line-height: 26px;
