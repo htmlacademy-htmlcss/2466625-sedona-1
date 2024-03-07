@@ -119,8 +119,8 @@
               <div class="price-filter-container">
                 <fieldset class="price">
                   <legend class="price-filter-title">Стоимость, <span class="price-filter-title">₽:</span></legend>
-                  <label><span>от</span><input class="price-field" type="text" name="price" value="0"></label>
-                  <label><span>до</span><input class="price-field" type="text" name="price" value="9000"></label>
+                  <label><span class="price-content">от</span><input class="price-field" type="text" name="price" value="0"></label>
+                  <label><span class="price-content">до</span><input class="price-field" type="text" name="price" value="9000"></label>
                 </fieldset>
                 <button class="button-blue price-filter-button" type="submit">Применить</button>
                 <button class="button" type="reset">Сбросить</button>
@@ -134,9 +134,9 @@
             <div class="sorting-container">
               <h2 class="hotels-found">Найдено гостиниц:38</h2>
               <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
+                <option class="sorting-text" value="popular">Сначала популярные</option>
+                <option class="sorting-text" value="cheap">Сначала дешевые</option>
+                <option class="sorting-text" value="expensive">Сначала дорогие</option>
               </select>
              <div class="sorting-content">
                <a href="#" class="button-light">
@@ -159,7 +159,7 @@
                   <img class="hotel-card-image" src="images/catalog-hotels/hotel-1.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
                 </a>
                 <a class="hotel-card-title-link" href="#">
-                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                  <h3 class="hotel-card-title-link">Amara Resort & Spa</h3>
                 </a>
                <div class="hotel-card-content">
                  <p class="hotel-card-description">Гостиница</p>
@@ -176,7 +176,7 @@
                   <img class="hotel-card-image" src="images/catalog-hotels/hotel-2.jpg" width="300" height="212" alt="Гостиница Villas at Poco Diablo">
                 </a>
                 <a class="hotel-card-title-link" href="#">
-                  <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                  <h3 class="hotel-card-title-link">Villas at Poco Diablo</h3>
                 </a>
                 <div class="hotel-card-content">
                  <p class="hotel-card-description">Гостиница</p>
@@ -193,7 +193,7 @@
                   <img class="hotel-card-image" src="images/catalog-hotels/hotel-3.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn">
                 </a>
                 <a class="hotel-card-title-link" href="#">
-                  <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                  <h3 class="hotel-card-title-link">Desert Quail Inn</h3>
                 </a>
                 <div class="hotel-card-content">
                  <p class="hotel-card-description">Гостиница</p>
@@ -210,7 +210,7 @@
                   <img class="hotel-card-image" src="images/catalog-hotels/hotel-4.jpg" width="300" height="212" alt="Гостиница GreenTree Inn">
                 </a>
                 <a class="hotel-card-title-link" href="#">
-                  <h3 class="hotel-card-title">GreenTree Inn</h3>
+                  <h3 class="hotel-card-title-link">GreenTree Inn</h3>
                 </a>
                 <div class="hotel-card-content">
                  <p class="hotel-card-description">Гостиница</p>
@@ -252,9 +252,7 @@
             <p class="catalog-subscribes-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
             <form class="subscribes-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label
-                for="subscribes-email">Email
-              </label>
+              <label for="subscribes-email" class="visually-hidden">Email</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="subscribes-email" id="subscribes-email" required>
               <button class="button-blue subscribes-button" type="submit">Подписаться</button>
             </form>
