@@ -179,6 +179,18 @@ img {
   display: block;
 }
 
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: #d6d0cd;
+}
+
 .navigation-link-current {
   position: relative;
 }
@@ -224,11 +236,9 @@ img {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 50%;
-  padding: 5px 4px;
+  padding: 4px 4px;
   position: absolute;
   top: 11px;
-  right: 4px;
-  bottom: 33px;
   left: 20px;
 }
 
@@ -247,8 +257,9 @@ img {
 
 .hero {
   background-color: #e0edf5;
-  background-image: url("../images/mountains.jpg");
-  background-size: cover;
+  background-image: url("../images/delimiter.svg"), url("../images/mountains.jpg");
+  background-size: 100% auto, cover;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -306,8 +317,13 @@ img {
 
 .advantages-item-container {
   width: 230px;
-  min-height: 200px;
-  padding: 90px 85px;
+  padding: 112px 85px;
+  flex-shrink: 0;
+}
+
+.pic-description {
+  width: 230px;
+  padding: 102px 85px;
   flex-shrink: 0;
 }
 
@@ -328,6 +344,36 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 62px;
+}
+
+.title-pic {
+  position: relative;
+}
+
+.title-pic::after {
+ content: "";
+ position: absolute;
+ left: 85px;
+ right: 85px;
+ bottom: -30px;
+ width: 60px;
+ height: 2px;
+ background-color:rgba(255, 255, 255, 0.3);
+}
+
+.no-pic {
+  position: relative;
+}
+
+.no-pic::after {
+ content: "";
+ position: absolute;
+ left: 85px;
+ right: 85px;
+ bottom: -30px;
+ width: 60px;
+ height: 2px;
+ background-color:rgba(0, 0, 0, 0.3);
 }
 
 .advantages-description {
@@ -645,8 +691,10 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 41px;
-  position: relative;
+  gap: 28px;
+  background-image: url("../images/breadcrumbs-icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: left 23px center;
 }
 
 .breadcrumbs-link {
@@ -655,19 +703,26 @@ img {
  font-weight: 400;
  line-height: 21px;
  color: #ffffff;
+ text-decoration: none;
+ display: block;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .breadcrumbs-link-icon {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  color: #ffffff;
   background-image: url("../images/breadcrumbs-icon-home.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
- }
+  display: block;
+  width: 13px;
+  height: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .catalog-filter-title {
  font-size: 20px;
@@ -772,18 +827,24 @@ img {
  align-self: center;
  margin-top: 0;
  margin-bottom: 0;
- margin-right: 200px;
 }
 
 .select-control {
   width: 292px;
   padding: 12px 20px;
+  margin-left: auto;
+  margin-right: 70px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .select-control:hover {
@@ -791,15 +852,18 @@ img {
 }
 
 .select-control:focus {
+  border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.select-control:active {
   border: 2px solid #3f5e72;
   outline: none;
 }
 
-.sorting-text {
-  font-family:"PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+.select-control:disabled {
+  border: #b3b3b3;
+  color: #b3b3b3;
 }
 
 .sorting-container {
@@ -807,13 +871,13 @@ img {
   background-color: #ffffff;
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .sorting-content {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  max-width: 170px;
+  max-width: 200px;
   gap: 8px;
 }
 
@@ -859,7 +923,6 @@ img {
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  position: relative;
 }
 
 .hotel-card-content {
@@ -869,14 +932,26 @@ img {
   row-gap: 16px;
 }
 
-.hotel-amara::before {
-  content: "";
-  width: 18px;
-  height: 17px;
-  background-image: url("../images/catalog-star.svg");
+.hotel-stars {
+  width: 140px;
+  height: 37px;
   background-repeat: no-repeat;
-  position: absolute;
-  bottom: 30px;
+  grid-column: 1/2;
+}
+
+.stars-4 {
+ background-image: url("../images/catalog-star.svg"), url("../images/catalog-star.svg"), url("../images/catalog-star.svg"), url("../images/catalog-star.svg");
+ background-position: 0 center, 24px center, 48px center, 72px center;
+}
+
+.stars-3 {
+  background-image: url("../images/catalog-star.svg"), url("../images/catalog-star.svg"), url("../images/catalog-star.svg");
+  background-position: 0 center, 24px center, 48px center;
+}
+
+.stars-2 {
+  background-image: url("../images/catalog-star.svg"), url("../images/catalog-star.svg");
+  background-position: 0 center, 24px center;
 }
 
 .hotel-card-image {
@@ -954,7 +1029,10 @@ img {
  background-color: #F2F2F2;
  text-transform: uppercase;
  text-align: center;
- padding: 8px 22px;
+ padding-top: 9px;
+ padding-left: 22px;
+ padding-bottom: 8px;
+ padding-right: 23px;
  grid-column: 2/3;
  border-radius: 4px;
 }
@@ -983,6 +1061,7 @@ img {
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
 
@@ -1009,15 +1088,41 @@ img {
   padding: 12px;
   color: #000000;
   background-color: #F2F2F2;
+  border: none;
   border-radius: 4px;
 }
 
+.pagination-current:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+  border: none;
+}
+
+.pagination-current:focus {
+  background-color: #f2f2f2;
+  color: #000000;
+  border: none;
+}
+
+.pagination-current:active {
+  background-color: #f2f2f2;
+  color: #000000;
+  border: none;
+}
+
 .pagination-divider {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
   display: block;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 17px 21px;
+  top: 16px;
+  left: 21px;
 }
 
 .catalog-subscribes {
