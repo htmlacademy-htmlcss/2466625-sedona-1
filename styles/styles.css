@@ -218,6 +218,15 @@ img {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
+  display: block;
+}
+
+.search:hover {
+  opacity: 60%;
+}
+
+.search:active {
+ opacity: 30%;
 }
 
 .favorites {
@@ -227,6 +236,15 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  display: block;
+}
+
+.favorites:hover {
+  opacity: 60%;
+}
+
+.favorites:active {
+ opacity: 30%;
 }
 
 .navigation-favorites {
@@ -490,8 +508,8 @@ img {
 
 .subscribes {
   background-image: url("../images/subscribe.jpg");
+  background-color: #9b9592;
   color: #000000;
-  background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -645,7 +663,7 @@ img {
 .filter {
   background-image: url("../images/catalog-filter.jpg");
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #9b9592;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -692,9 +710,31 @@ img {
   padding: 0;
   list-style-type: none;
   gap: 28px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 20px;
+
   background-image: url("../images/breadcrumbs-icon-arrow.svg");
   background-repeat: no-repeat;
-  background-position: left 23px center;
+  background-position: center;
+  background-size: contain;
+
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-item:first-child:before {
+  display: none;
 }
 
 .breadcrumbs-link {
@@ -708,7 +748,15 @@ img {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 1);
+  opacity: 60%;
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
 }
 
 .breadcrumbs-link-icon {
@@ -722,6 +770,18 @@ img {
   padding-bottom: 3px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.breadcrumbs-link-icon:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link-icon:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link-icon:active {
+  opacity: 30%;
 }
 
 .catalog-filter-title {
