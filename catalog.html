@@ -36,7 +36,7 @@
                <span class="navigation-favorites">12</span>
              </a>
            </li>
-           <li clsss="navigation-item">
+           <li class="navigation-item">
              <a class="button-brown navigation-button" href="#">Хочу сюда!</a>
            </li>
          </ul>
@@ -63,7 +63,7 @@
             <h2 class="visually-hidden">Список особенностей гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group group-1">
+              <fieldset class="group-1">
                 <legend
                   class="catalog-filter-title">Инфраструктура:
                 </legend>
@@ -84,7 +84,7 @@
               </fieldset>
 
               <fieldset
-                class="catalog-filter-group group-2">
+                class="group-2">
                 <legend
                   class="catalog-filter-title">Тип Жилья:
                 </legend>
@@ -108,21 +108,15 @@
                 <fieldset class="price">
                   <legend class="price-filter-title">Стоимость, <span class="price-filter-title">₽:</span></legend>
                   <div class="range">
-                   <div class="range-wrapper-inputs">
-                     <div class="price-field-container">
-                       <div class="min-input">
-                         <label>
-                           <input class="price-field" type="number" name="price" value="0">
-                           <span class="price-content">от</span>
-                         </label>
-                       </div>
-                       <div class="max-input">
-                         <label>
-                           <input class="price-field price-field-2" type="number" name="price" value="9000">
-                           <span class="price-content">до</span>
-                         </label>
-                       </div>
-                     </div>
+                    <div class="price-field-container">
+                      <label class="min-input">
+                        <input class="price-field" type="number" name="price" value="0">
+                        <span class="price-content">от</span>
+                      </label>
+                      <label class="max-input">
+                       <input class="price-field price-field-2" type="number" name="price" value="9000">
+                       <span class="price-content">до</span>
+                     </label>
                    </div>
                    <div class="range-scale">
                      <div class="range-bar" style="right: 61px; width: 226px">
@@ -135,19 +129,19 @@
                      </div>
                    </div>
                  </div>
-                </fieldset>
-              </div>
-              <div class="price-button">
-                <button class="button-blue price-filter-button" type="submit">Применить</button>
-                <button class="filter-button" type="reset">Сбросить</button>
-              </div>
-            </form>
-          </section>
-        </div>
+               </fieldset>
+             </div>
+             <div class="price-button">
+               <button class="button-blue price-filter-button" type="submit">Применить</button>
+               <button class="filter-button" type="reset">Сбросить</button>
+             </div>
+           </form>
+         </section>
+       </div>
 
-        <section class="hotels-catalog">
-          <div class="hotels-container">
-            <div class="sorting-container">
+       <section class="hotels-catalog">
+         <div class="hotels-container">
+           <div class="sorting-container">
               <h2 class="hotels-found">Найдено гостиниц: 38</h2>
               <select class="select-control" aria-label="Сортировка">
                 <option class="sorting-text" value="popular">Сначала популярные</option>
@@ -332,8 +326,7 @@
 
      <footer class="page-footer">
        <section class="footer-social">
-         <h2 class="visually-hidden">Социальные сети
-         </h2>
+         <h2 class="visually-hidden">Социальные сети</h2>
 
          <ul class="footer-social-list">
            <li class="footer-social-item">
