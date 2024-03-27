@@ -121,7 +121,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  box-shadow: 0 0 15px 0 #00000033;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -399,7 +399,7 @@ img {
  bottom: -30px;
  width: 60px;
  height: 2px;
- background-color: #000;
+ background-color: #000000;
  opacity: 30%;
 }
 
@@ -680,7 +680,7 @@ img {
 }
 
 .academy-link {
-  color: #000;
+  color: #000000;
 }
 
 .academy-link:hover {
@@ -774,7 +774,7 @@ img {
   display: block;
   width: 15px;
   height: 15px;
-  color: #000;
+  color: #000000;
   position: absolute;
   top: 18px;
   right: 18px;
@@ -806,7 +806,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   font-style: normal;
-  color:#000;
+  color:#000000;
   text-transform: uppercase;
   max-width: 413px;
 }
@@ -887,7 +887,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
-  color: #000;
+  color: #000000;
   margin: 0;
   padding-left: 157px;
   padding-right: 89px;
@@ -902,7 +902,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
-  color: #000;
+  color: #000000;
   margin-right: 24px;
 }
 
@@ -913,7 +913,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
-  color: #000;
+  color: #000000;
   margin-right: 18px;
 }
 
@@ -941,7 +941,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
-  color: #000;
+  color: #000000;
   margin-right: 46px;
 }
 
@@ -952,7 +952,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
-  color: #000;
+  color: #000000;
   margin-right: 10px;
 }
 
@@ -979,17 +979,17 @@ img {
 }
 
 .minus-icon:hover {
-  color: #000;
+  color: #000000;
 }
 
 .minus-icon:focus {
-  color: #000;
+  color: #000000;
   border: 3px solid #82B3D3;
   outline: none;
 }
 
 .minus-icon:active {
-  color: #000;
+  color: #000000;
   opacity: 20%;
 }
 
@@ -1000,7 +1000,7 @@ img {
   line-height: 20px;
   font-style: normal;
   text-align: center;
-  color: #000;
+  color: #000000;
   width: 31px;
   padding: 14px 10px;
   box-sizing: border-box;
@@ -1037,17 +1037,17 @@ img {
 }
 
 .plus-icon:hover {
-  color: #000;
+  color: #000000;
 }
 
 .plus-icon:focus {
-  color: #000;
+  color: #000000;
   border: 3px solid #82B3D3;
   outline: none;
 }
 
 .plus-icon:active {
-  color: #000;
+  color: #000000;
   opacity: 20%;
 }
 
@@ -1105,7 +1105,7 @@ img {
   top: 42px;
   transform: translateX(-45%);
   z-index: 1;
-  box-shadow: 0 15px 30px 0 #0000004D;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .info::after {
@@ -1661,7 +1661,7 @@ img {
   background-position: right 20px center;
   cursor: pointer;
   font-family: inherit;
-  color: #000;
+  color: #000000;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1801,7 +1801,7 @@ img {
 }
 
 .hotel-card-title-link:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   border: none;
 }
 
