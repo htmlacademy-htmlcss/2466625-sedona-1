@@ -418,7 +418,7 @@ img {
   background-color: #f0f6fa;
 }
 
-.town_sedona {
+.town-sedona {
   object-fit: cover;
 }
 
@@ -695,7 +695,7 @@ img {
 
 .footer-contacts-address {
   display: block;
-  max-width: 331px;
+  max-width: 335px;
 }
 
 .footer-contacts-address-phone {
@@ -799,7 +799,7 @@ img {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 63px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -807,7 +807,7 @@ img {
   font-style: normal;
   color:#000000;
   text-transform: uppercase;
-  max-width: 413px;
+  max-width: 415px;
 }
 
 .hotel-form {
@@ -817,7 +817,7 @@ img {
 
 .hotel-form .field-group {
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 .field-group {
@@ -874,10 +874,10 @@ img {
   font-style: normal;
   color: #FF5757;
   margin: 0;
-  padding-left: 157px;
+  padding-left: 155px;
   padding-right: 140px;
   margin-bottom: 23px;
-  max-width: 280px;
+  max-width: 285px;
 }
 
 .explanation-2 {
@@ -889,9 +889,9 @@ img {
   color: #000000;
   margin: 0;
   padding-left: 157px;
-  padding-right: 89px;
+  padding-right: 86px;
   margin-bottom: 23px;
-  max-width: 331px;
+  max-width: 335px;
 }
 
 .first-date {
@@ -1004,6 +1004,7 @@ img {
   text-align: center;
   color: #000000;
   width: 31px;
+  height: 48px;
   padding: 14px 10px;
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -1014,6 +1015,17 @@ img {
 .quantity::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.quantity[type=number] {
+  appearance: textfield;
+}
+
+.quantity:focus {
+  background-color: #f2f2f2;
+  border: none;
+  outline: 3px solid #82b3d3;
+  z-index: 2;
 }
 
 .more-button {
@@ -1240,7 +1252,7 @@ img {
  display: block;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link[href]:hover {
   color: #ffffff;
   opacity: 60%;
 }
@@ -1349,6 +1361,7 @@ img {
   position: relative;
   padding-left: 36px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .control-input + label::before {
@@ -1395,6 +1408,7 @@ img {
   position: relative;
   padding-left: 36px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .control-input-2 + label::before {
@@ -1487,6 +1501,10 @@ img {
 .price-field::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.price-field[type=number] {
+  appearance: textfield;
 }
 
 .price-field:hover {
@@ -1676,6 +1694,7 @@ img {
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
   cursor: pointer;
   font-family: inherit;
   color:#333333;

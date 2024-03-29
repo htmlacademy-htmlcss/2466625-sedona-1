@@ -69,7 +69,7 @@
                <h3 class="advantages-title title-pic">Настоящий городок</h3>
                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="town_sedona" src="images/advantages-photo-1.jpg" width="800" height="385" alt="Здания и природа городка Седона">
+              <img class="town-sedona" src="images/advantages-photo-1.jpg" width="800" height="385" alt="Здания и природа городка Седона">
             </li>
             <li class="advantages-text">
               <div class="advantages-item-container">
@@ -222,12 +222,12 @@
            <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="post">
              <p class="field-group">
                <label class="first-date" for="hotel-first-date">Дата Заезда:</label>
-               <input class="hotel-form-field" type="text" id="hotel-first-date" name="arrival date" placeholder="Дата" value="27 апреля 2020">
+               <input class="hotel-form-field" type="text" id="hotel-first-date" name="arrival-date" placeholder="Дата" value="27 апреля 2020" required>
              </p>
              <p class="explanation">Мы не можем отправить вас в прошлое.</p>
              <p class="field-group">
                <label class="second-date" for="hotel-second-date">Дата Выезда:</label>
-               <input class="hotel-form-field" type="text" id="hotel-second-date" name="date of departure" placeholder="Дата" value="1 сентября 2023">
+               <input class="hotel-form-field" type="text" id="hotel-second-date" name="date-of-departure" placeholder="Дата" value="1 сентября 2023" required>
              </p>
              <p class="explanation-2">На эти даты есть свободные номера. Пока есть.</p>
              <div class="number-of-persons">
@@ -240,7 +240,7 @@
                    </svg>
                    <span class="visually-hidden">Уменьшить количество</span>
                  </button>
-                 <input class="quantity" type="number" id="adults-number" value="2">
+                 <input class="quantity" type="number" id="adults-number" name="quantity-of-adults" value="2">
                  <button class="more-button" type="button">
                    <svg class="plus-icon" aria-hidden="true" focusable="false"
                      xmlns="http://www.w3.org/2000/svg" width="14" height="14">
@@ -264,7 +264,7 @@
                    </svg>
                    <span class="visually-hidden">Уменьшить количество</span>
                  </button>
-                 <input class="quantity" type="number" id="children-number" value="2">
+                 <input class="quantity" type="number" id="children-number" name="quantity-of-children" value="2">
                  <button class="more-button" type="button">
                    <svg class="plus-icon" aria-hidden="true" focusable="false"
                      xmlns="http://www.w3.org/2000/svg" width="14" height="14">
