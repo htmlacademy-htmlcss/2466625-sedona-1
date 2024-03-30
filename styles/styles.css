@@ -23,7 +23,7 @@ body {
   font-family:"PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
   height: 100%;
 }
@@ -124,6 +124,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -333,6 +334,7 @@ img {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  color:#333333;
 }
 
 .advantages-list {
@@ -344,8 +346,8 @@ img {
 }
 
 .advantages-item-container {
-  width: 230px;
-  padding: 112px 85px;
+  width: 232px;
+  padding: 112px 84px;
   flex-shrink: 0;
 }
 
@@ -356,7 +358,7 @@ img {
 }
 
 .text-with-pic {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   display: flex;
 }
@@ -408,10 +410,19 @@ img {
 }
 
 .advantages-description {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  margin: 0;
+ font-size: 18px;
+ font-weight: 400;
+ line-height: 21px;
+ margin: 0;
+ color: #ffffff;
+}
+
+.advantages-description-1 {
+ font-size: 18px;
+ font-weight: 400;
+ line-height: 21px;
+ margin: 0;
+ color:#333333;
 }
 
 .advantages-text {
@@ -451,6 +462,7 @@ img {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  color: #333333;
 }
 
 .advantages-item-container-1 {
@@ -482,7 +494,7 @@ img {
 }
 
 .food {
-  background-color: #ffffff;
+  background-color:#ffffff;
 }
 
 .icon-food {
@@ -541,6 +553,7 @@ img {
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 54px;
+  color: #333333;
 }
 
 .subtitle-button {
@@ -660,7 +673,7 @@ img {
 }
 
 .social-button:active {
-  color: #68A2CA;
+  color: #68a2ca;
   opacity: 30%;
 }
 
@@ -784,7 +797,7 @@ img {
 
 .modal-close-button:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border: none;
 }
 
@@ -834,9 +847,9 @@ img {
  line-height: 24px;
  width: 438px;
  color: #000000;
- background-color: #F2F2F2;
+ background-color: #f2f2f2;
  border-radius: 4px;
- border: 2px solid #F2F2F2;
+ border: 2px solid #f2f2f2;
  display: block;
  padding: 12px 18px;
  box-sizing: border-box;
@@ -872,7 +885,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
-  color: #FF5757;
+  color: #ff5757;
   margin: 0;
   padding-left: 155px;
   padding-right: 140px;
@@ -886,7 +899,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
-  color: #000000;
+  color:#333333;
   margin: 0;
   padding-left: 157px;
   padding-right: 86px;
@@ -986,7 +999,7 @@ img {
 
 .less-button:focus .minus-icon {
   color: #000000;
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border: none;
 }
 
@@ -1059,7 +1072,7 @@ img {
 
 .more-button:focus .plus-icon {
   color: #000000;
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border: none;
 }
 
@@ -1078,7 +1091,7 @@ img {
   height: 26px;
   border-radius: 50%;
 
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url("../images/modal-sign.svg");
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -1176,6 +1189,11 @@ img {
   color: #95beda;
 }
 
+.hotel-search-button:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .filter {
   background-image: url("../images/catalog-filter.jpg");
   color: #ffffff;
@@ -1257,12 +1275,12 @@ img {
   opacity: 60%;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link[href]:focus {
   color: #ffffff;
   outline: none;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link[href]:active {
   color: #ffffff;
   opacity: 30%;
 }
@@ -1395,13 +1413,18 @@ img {
 }
 
 .control-input:focus + label::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
 .control-input:active + label {
   color: #ffffff;
   opacity: 30%;
+}
+
+.control-input:disabled + label {
+  color: #ffffff;
+  opacity: 10%;
 }
 
 .control-input-2 + label {
@@ -1428,7 +1451,7 @@ img {
   display: block;
   width: 10px;
   height: 10px;
-  background-color:#3F5E72;
+  background-color:#3f5e72;
   border-radius: 50%;
   position: absolute;
   top: 5px;
@@ -1436,16 +1459,23 @@ img {
 }
 
 .control-input-2:hover + label {
+  color: #ffffff;
   opacity: 60%;
 }
 
 .control-input-2:focus + label::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 50%;
 }
 
 .control-input-2:active + label {
+  color: #ffffff;
   opacity: 30%;
+}
+
+.control-input-2:disabled + label {
+  color: #ffffff;
+  opacity: 10%;
 }
 
 .price {
@@ -1577,12 +1607,12 @@ img {
 
 .range-toggle:focus {
   background-color: #ffffff;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
   background-color: #ffffff;
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
   border: none;
 }
 
@@ -1858,6 +1888,7 @@ img {
  font-style: normal;
  justify-self: start;
  margin: 0;
+ color: #333333;
 }
 
 .hotel-card-description-price {
@@ -1869,6 +1900,7 @@ img {
  margin: 0;
  justify-self: end;
  max-width: 140px;
+ color: #333333;
 }
 
 .hotel-card-button {
@@ -1902,7 +1934,8 @@ img {
  font-style: normal;
  font-weight: 400;
  line-height: 20px;
- background-color: #F2F2F2;
+ color: #333333;
+ background-color: #f2f2f2;
  text-transform: uppercase;
  text-align: center;
  padding-top: 9px;
@@ -1936,7 +1969,7 @@ img {
   height: 60px;
   padding: 12px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
   border: 1px solid #82b3d3;
   border-radius: 4px;
@@ -1965,7 +1998,7 @@ img {
   height: 60px;
   padding: 12px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
 }
@@ -2029,7 +2062,7 @@ img {
  font-size: 22px;
  font-weight: 400;
  line-height: 26px;
- color: #000000;
+ color: #333333;
 }
 
 .field {
@@ -2039,9 +2072,9 @@ img {
  font-weight: 400;
  line-height: 24px;
  width: 413px;
- border: 2px solid #F2F2F2;
+ border: 2px solid #f2f2f2;
  color: #000000;
- background-color: #F2F2F2;
+ background-color: #f2f2f2;
  border-radius: 4px 0 0 4px;
  display: block;
  padding-top: 11px;
